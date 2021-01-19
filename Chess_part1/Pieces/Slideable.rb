@@ -12,6 +12,18 @@ module Slideable
 
 
     def move_directions
+        # horizontal_dirs
+
+        
+    end
+
+    def grow_unblock_moves_in_dir(dx,dy)
+        x,y = @pos
+        x,y = x+dx , y+dy
+        @pos = x,y
+        
+
+
     end
 
 end

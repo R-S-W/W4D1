@@ -1,5 +1,6 @@
 
 
+
 class Piece 
     attr_reader :pos 
 
