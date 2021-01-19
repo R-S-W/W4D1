@@ -36,7 +36,7 @@ class Manager < Employee
     def add_salaries
         salaries = 0
         self.employees.each do |employee|
-            if employee.is_a?(Array)
+            if employee.is_a?(Manager)
                 salaries += employee.salary + employee.add_salaries
             else
                 salaries += employee.salary
