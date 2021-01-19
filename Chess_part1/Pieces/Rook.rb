@@ -1,8 +1,10 @@
-class Bishop < Piece
+
+
+class Rook < Piece
     include Slideable
 
     def move_dirctions
-        diagonal_dirs
+        horizontal_vertical_dirs
     end
 
 

@@ -9,10 +9,10 @@ class Board
 
     def fill_board
 
-        @grid[0].each_with_index { |e, i| @grid[0][i] = Piece.new([0,i]) }
-        @grid[1].each_with_index { |e, i| @grid[1][i] = Piece.new([1,i]) }
-        @grid[6].each_with_index { |e, i| @grid[6][i] = Piece.new([6,i]) }
-        @grid[7].each_with_index { |e, i| @grid[7][i] = Piece.new([7,i]) }
+        @grid[0].each_with_index { |e, i| @grid[0][i] = Piece.new([0,i],self) }
+        @grid[1].each_with_index { |e, i| @grid[1][i] = Piece.new([1,i],self) }
+        @grid[6].each_with_index { |e, i| @grid[6][i] = Piece.new([6,i],self) }
+        @grid[7].each_with_index { |e, i| @grid[7][i] = Piece.new([7,i],self) }
     end
 
     def move_piece(start_pos, end_pos)

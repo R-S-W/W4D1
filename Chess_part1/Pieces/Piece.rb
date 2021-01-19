@@ -4,9 +4,10 @@
 class Piece 
     attr_reader :pos 
 
-    def initialize(pos, type = nil)
+    def initialize(pos, board, type = nil)
         @type = type
         @pos = pos
+        @board = board
     end
 
     def is_valid_move?
