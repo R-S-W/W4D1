@@ -19,4 +19,9 @@ class Board
 
     end
 
+    def is_valid_pos?(pos)
+        x,y = pos
+        x >= 0 && x<8 && y>=0 && y<8
+    end
+
 end
