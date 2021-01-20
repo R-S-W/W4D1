@@ -10,10 +10,12 @@ require_relative 'Pieces/Rook.rb'
 
 class Board 
 
+    attr_reader :grid
+
     def initialize
-        @grid = Array.new(8) {Array.new(8)}
-        fill_board
         @empty_space=Nullpiece.instance
+        @grid = Array.new(8) {Array.new(8, @empty_space)}
+        fill_board
     end
 
     def fill_board
@@ -29,7 +31,11 @@ class Board
         @grid[1].each_with_index { |e, i| @grid[1][i] = Pawn.new([i,6],self, :Black) }
 
 
-        # @grid
+        # (2..5).each do |i|
+        #     (0..7).each do |j|
+        #         @grid[i][j] = @empty_space
+        #     end
+        # end
 
 
         @grid[6].each_with_index { |e, i| @grid[6][i] = Pawn.new([i,1],self, :White) }
