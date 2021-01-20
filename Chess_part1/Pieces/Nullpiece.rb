@@ -7,4 +7,5 @@ class Nullpiece < Piece
         @color = nil
         @symbol = nil
     end
+    
 end

@@ -21,7 +21,6 @@ class Board
         else 
             raise StandardError "Can not move piece there"
         end
-
     end
 
     def [](pos)
