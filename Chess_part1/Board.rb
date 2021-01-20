@@ -18,7 +18,10 @@ class Board
     def move_piece(start_pos, end_pos)
         if is_valid_pos?(start_pos) && is_valid_pos?(end_pos) && self[start_pos].is_valid_move? 
             self[end_pos] = self[start_pos]
+        else 
+            raise StandardError "Can not move piece there"
         end
+
     end
 
     def [](pos)
