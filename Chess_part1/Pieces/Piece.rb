@@ -1,5 +1,5 @@
 
-require_relative 'Board.rb'
+
 
 class Piece 
     attr_reader :pos, :color
@@ -9,10 +9,6 @@ class Piece
         @pos = pos
         @board = board
         @color = color 
-    end
-
-    def is_valid_move?
-        
     end
 
 

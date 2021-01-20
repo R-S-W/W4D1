@@ -1,7 +1,7 @@
 
 
 
-module Steppable
+module Stepable
 
     def move_diffs
     end

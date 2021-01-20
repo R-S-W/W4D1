@@ -1,10 +1,15 @@
+require_relative 'Piece.rb'
 class Pawn < Piece
 
     Pawn_moves_black = [-1,0]
     Pawn_moves_white = [1,0]
     
     def symbol 
-        "♟︎" 
+        if @color == :Black
+            "♟︎" 
+        else
+            "♙"
+        end
     end
 
 

@@ -1,3 +1,6 @@
+require_relative 'Piece'
+require 'singleton'
+
 class Nullpiece < Piece
     include Singleton 
 
